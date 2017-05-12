@@ -178,15 +178,16 @@ hr{
 }
 @media only screen and (max-width: 900px) {
   .imges{
-    width: 70%;
+    width: 100%;
   }
   .images img{
     width: 100%;
     margin: 10px auto;
     display:block;
   }
+
   .formulario{
-    width: 80%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -224,7 +225,7 @@ hr{
 }
 .dark-primary-color    { background: #0288D1; }
 .default-primary-color { background: #03A9F4; }
-.light-primary-color   { background: #B3E5FC; }
+.light-primary-color   { background: #fff  ; }
 .text-primary-color    { color: #FFFFFF; }
 .accent-color          { background: #7C4DFF; }
 .primary-text-color    { color: #212121; }
