@@ -7,7 +7,7 @@ body{
   border: 0;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif,Arial;
   color: #fff;
 }
 header{
@@ -50,6 +50,10 @@ nav ul li a:hover{
 .about{
 margin-top: -9px;
 padding: 20px;
+background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .photo{
   border-radius:50%;
@@ -77,6 +81,9 @@ padding: 20px;
   margin-top:10px;
   margin-left: 20px;
   margin-right: 10px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.52);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.52);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.52);
 }
 .images img:hover{
 }
@@ -223,8 +230,11 @@ hr{
     display: inline-flex;
     font-size: 14px;}
 }
-.dark-primary-color    { background: #0288D1; }
-.default-primary-color { background: #03A9F4; }
+.dark-primary-color    { background: #53346D; }
+.default-primary-color { background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #53346D, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #53346D, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
 .light-primary-color   { background: #fff  ; }
 .text-primary-color    { color: #FFFFFF; }
 .accent-color          { background: #7C4DFF; }
