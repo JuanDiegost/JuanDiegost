@@ -1,1 +1,282 @@
-*{padding:0;margin:0;box-sizing:border-box}body{border:0;margin:0;padding:0;font-family:'Lato',sans-serif,Arial;color:#fff}header{width:100%;z-index:100;margin-bottom:50px;background-color:#e0e4cc;padding-bottom:20px}nav{background:#a7dbd8;float:right;width:100%;margin-bottom:20px;position:fixed}nav ul{list-style:none;overflow:hidden;margin:0}nav ul li{float:right}nav ul li a{display:block;padding:20px;text-decoration:none;color:#fff}nav ul li a:hover{background:#7c4dff}.about{margin-top:-9px;padding:20px;background:#a770ef;background:-webkit-linear-gradient(to bottom,#fdb99b,#cf8bf3,#a770ef);background:linear-gradient(to bottom,#fdb99b,#cf8bf3,#a770ef)}.photo{border-radius:50%;border:1px solid #bdbdbd;display:block;margin:0 auto}.center-text{text-align:center}.images{z-index:0;margin:0 auto;width:70%;background-color:#e0e4cc;padding:20px}.images img{display:inline-block;width:45%;margin-top:10px;margin-left:20px;margin-right:10px;-webkit-box-shadow:5px 5px 5px 0 rgba(0,0,0,0.52);-moz-box-shadow:5px 5px 5px 0 rgba(0,0,0,0.52);box-shadow:5px 5px 5px 0 rgba(0,0,0,0.52)}.formulario{background:#fff;width:60%;margin:20px auto;padding:20px;border-radius:5px}.formulario input{display:block}.formulario input[type="text"],.formulario input[type="email"],.formulario textarea{width:90%;padding:20px;margin:5px auto;margin-bottom:20px;border-radius:3px;border:1px solid #bdbdbd;font-family:arial;font-size:16px}.formulario textarea{min-height:80%;max-height:300px;min-width:90%;max-width:90%;margin:5px auto;margin-left:15px}.formulario input[type="submit"]{width:80%;margin:20px auto;background:0;border:1px solid #bdbdbd;color:#7c4dff;padding:10px;cursor:pointer;font-size:16px;border-radius:3px;-webkit-transition:background 1s;-moz-transition:background 1s;transition:background 1s}.formulario input[type="text"]:focus,.formulario input[type="email"]:focus,.formulario textarea:focus{border:2px solid #7c4dff}.formulario input[type="submit"]:hover{background:#7c4dff;color:#fff}footer{text-align:center;padding:20px}footer div{display:inline;width:100%}.fa{padding:5px;color:#fff;-webkit-transition:color .2s;-moz-transition:color .2s;transition:color .2s}.fa-facebook:hover{color:#3b5998}.fa-twitter:hover{color:#55acee}.fa-linkedin:hover{color:#007bb5}.fa-instagram:hover{color:#125688}.fa-github:hover{color:#000}.fa-free-code-camp:hover{color:#006400}@media only screen and (max-width:1000px){.imges{width:80%}.formulario{width:80%}}@media only screen and (max-width:900px){.imges{width:100%}.images img{width:100%;margin:10px auto;display:block}.formulario{width:100%}}@media only screen and (max-width:600px){.imges{width:100%;padding:0;margin-left:0;margin-right:0}.images img{width:100%}}@media only screen and (max-width:400px){.images{width:100%;padding:5px}.container{width:100%;margin:0}.formulario{width:90%}.images img{width:100%}nav ul{padding:0;display:inline-flex;font-size:14px}}.dark-primary-color{background:#53346d}.default-primary-color{background:#000;background:-webkit-linear-gradient(to right,#53346d,#000);background:linear-gradient(to right,#53346d,#000)}.light-primary-color{background:#fff}.text-primary-color{color:#fff}.accent-color{background:#7c4dff}.primary-text-color{color:#212121}.secondary-text-color{color:#757575}.divider-color{border-color:#bdbdbd}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif, Arial;
+    color: #fff
+}
+header {
+    width: 100%;
+    z-index: 100;
+    margin-bottom: 50px;
+    background-color: #e0e4cc;
+    padding-bottom: 20px
+}
+nav {
+    background: #a7dbd8;
+    float: right;
+    width: 100%;
+    margin-bottom: 20px;
+    position: fixed
+}
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0
+}
+nav ul li {
+    float: right
+}
+nav ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff
+}
+nav ul li a:hover {
+    background: #7c4dff
+}
+.about {
+    margin-top: -9px;
+    padding: 20px;
+    background: #a770ef;
+    background: -webkit-linear-gradient(to bottom, #fdb99b, #cf8bf3, #a770ef);
+    background: linear-gradient(to bottom, #fdb99b, #cf8bf3, #a770ef)
+}
+
+@keyframes clipMe {
+  0%, 100% {
+    clip: rect(0px, 220px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 220px, 0px);
+  }
+  50% {
+    clip: rect(218px, 220px, 220px, 0px);
+  }
+  75% {
+    clip: rect(0px, 220px, 220px, 218px);
+  }
+}
+
+.photo {
+    border-radius: 50%;
+    border: 1px solid #bdbdbd;
+    display: block;
+    margin: 0 auto;
+}
+.center-text {
+    text-align: center
+}
+.images {
+    z-index: 0;
+    margin: 0 auto;
+    width: 70%;
+    background-color: #e0e4cc;
+    padding: 20px
+}
+.images img {
+    display: inline-block;
+    width: 45%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.52);
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.52)
+}
+
+.title{
+  margin-top:20px;
+}
+
+.formulario {
+    background: #fff;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px
+}
+.formulario input {
+    display: block
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 90%;
+    padding: 20px;
+    margin: 5px auto;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #bdbdbd;
+    font-family: arial;
+    font-size: 16px
+}
+.formulario textarea {
+    min-height: 80%;
+    max-height: 300px;
+    min-width: 90%;
+    max-width: 90%;
+    margin: 5px auto;
+    margin-left: 15px
+}
+.formulario input[type="submit"] {
+    width: 80%;
+    margin: 20px auto;
+    background: 0;
+    border: 1px solid #bdbdbd;
+    color: #7c4dff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    transition: background 1s
+}
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario textarea:focus {
+    border: 2px solid #7c4dff
+}
+.formulario input[type="submit"]:hover {
+    background: #7c4dff;
+    color: #fff;
+}
+
+.name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+}
+
+.email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+}
+.comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+}
+
+.icon-input{
+  background-size: 30px 30px;
+	background-position: 10px 12px;
+	background-repeat: no-repeat;
+  text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px
+}
+footer div {
+    display: inline;
+    width: 100%
+}
+.fa {
+    padding: 5px;
+    color: #fff;
+    -webkit-transition: color .2s;
+    -moz-transition: color .2s;
+    transition: color .2s
+}
+.fa-facebook:hover {
+    color: #3b5998
+}
+.fa-twitter:hover {
+    color: #55acee
+}
+.fa-linkedin:hover {
+    color: #007bb5
+}
+.fa-instagram:hover {
+    color: #125688
+}
+.fa-github:hover {
+    color: #000
+}
+.fa-free-code-camp:hover {
+    color: #006400
+}
+@media only screen and (max-width: 1000px) {
+    .images {
+        width: 80%
+    }
+    .formulario {
+        width: 80%
+    }
+}
+@media only screen and (max-width: 900px) {
+    .images {
+        width: 100%
+        margin: 10px;
+    }
+    .images img {
+        width: 100%;
+        margin: 10px auto;
+        display: block
+    }
+    .formulario {
+        width: 100%
+    }
+}
+@media only screen and (max-width: 600px) {
+    .images {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0
+    }
+    .images img {
+        width: 100%
+    }
+}
+@media only screen and (max-width: 400px) {
+    .images {
+        width: 100%;
+        padding: 5px
+    }
+    .container {
+        width: 100%;
+        margin: 0
+    }
+    .formulario {
+        width: 90%
+    }
+    .images img {
+        width: 100%
+    }
+    nav ul {
+        padding: 0;
+        display: inline-flex;
+        font-size: 14px
+    }
+}
+.dark-primary-color {
+    background: #53346d
+}
+.default-primary-color {
+    background: #000;
+    background: -webkit-linear-gradient(to right, #53346d, #000);
+    background: linear-gradient(to right, #53346d, #000)
+}
+.light-primary-color {
+    background: #fff
+}
+.text-primary-color {
+    color: #fff
+}
+.accent-color {
+    background: #7c4dff
+}
+.primary-text-color {
+    color: #212121
+}
+.secondary-text-color {
+    color: #757575
+}
+.divider-color {
+    border-color: #bdbdbd
+}
