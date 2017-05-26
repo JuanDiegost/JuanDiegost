@@ -150,14 +150,14 @@ nav ul li a:hover {
 }
 
 .name{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-image: url(../images/name.svg);
 }
 
 .email{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-image: url(../images/email.svg);
 }
 .comment{
-	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-image: url(../images/comment.svg);
 }
 
 .icon-input{
