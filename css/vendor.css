@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 body {
     border: 0;
@@ -10,6 +10,7 @@ body {
     font-family: 'Lato', sans-serif, Arial;
     color: #fff
 }
+
 header {
     width: 100%;
     z-index: 100;
@@ -38,17 +39,18 @@ nav ul li a {
     text-decoration: none;
     color: #fff
 }
+
 nav ul li a:hover {
     background: #7c4dff
 }
+
 .about {
-    margin-top: -9px;
+    margin-top: -15px;
     padding: 20px;
     background: #a770ef;
     background: -webkit-linear-gradient(to bottom, #fdb99b, #cf8bf3, #a770ef);
     background: linear-gradient(to bottom, #fdb99b, #cf8bf3, #a770ef)
 }
-
 @keyframes clipMe {
   0%, 100% {
     clip: rect(0px, 220px, 2px, 0px);
@@ -73,6 +75,10 @@ nav ul li a:hover {
 .center-text {
     text-align: center
 }
+
+.container{
+  text-align: center;
+}
 .images {
     z-index: 0;
     margin: 0 auto;
@@ -93,6 +99,7 @@ nav ul li a:hover {
 
 .title{
   margin-top:20px;
+  font-size: 3em;
 }
 
 .formulario {
@@ -100,11 +107,20 @@ nav ul li a:hover {
     width: 60%;
     margin: 20px auto;
     padding: 20px;
-    border-radius: 5px
 }
+
+.form{
+  border-radius: 5px;
+  border:1px solid #000;
+  margin-top: 10px;
+  width: 80%;
+  margin: 1.2rem auto;
+}
+
 .formulario input {
-    display: block
+    display: block;
 }
+
 .formulario input[type="text"],
 .formulario input[type="email"],
 .formulario textarea {
@@ -126,12 +142,12 @@ nav ul li a:hover {
     margin-left: 15px
 }
 .formulario input[type="submit"] {
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
     background: 0;
     border: 1px solid #bdbdbd;
     color: #7c4dff;
-    padding: 10px;
+    padding: 2rem;
     cursor: pointer;
     font-size: 16px;
     border-radius: 3px;
@@ -139,15 +155,21 @@ nav ul li a:hover {
     -moz-transition: background 1s;
     transition: background 1s
 }
+
 .formulario input[type="text"]:focus,
 .formulario input[type="email"]:focus,
 .formulario textarea:focus {
-    border: 2px solid #7c4dff
+  border: 1px solid #000;
+  -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.52);
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.52);
 }
+
 .formulario input[type="submit"]:hover {
     background: #7c4dff;
     color: #ffffff;
 }
+
 
 .name{
 	background-image: url(../images/name.svg);
@@ -158,6 +180,45 @@ nav ul li a:hover {
 }
 .comment{
 	background-image: url(../images/comment.svg);
+}
+.btn{
+  text-decoration: none;
+}
+
+.images{
+  width: 100%;
+  background-color: #fff;
+}
+.page{
+
+  display: inline-block;
+  width: 40%;
+  color: #000;
+  background: white;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 0.5em;
+  text-align: center;
+  padding: 2rem 0.5rem;
+  -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.52);
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.52);
+}
+
+.page img, .page h2, .page p{
+  margin: 1rem;
+  width: 80%;
+}
+
+.btn-show-more{
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0.5rem 0.5rem;
+  float: right;
+
+  -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.52);
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.52);
 }
 
 .icon-input{
@@ -171,6 +232,7 @@ footer {
     text-align: center;
     padding: 20px
 }
+
 footer div {
     display: inline;
     width: 100%
@@ -202,10 +264,10 @@ footer div {
 }
 @media only screen and (max-width: 1000px) {
     .images {
-        width: 80%
+        width: 80%;
     }
     .formulario {
-        width: 80%
+        width: 80%;
     }
 }
 @media only screen and (max-width: 900px) {
@@ -216,10 +278,19 @@ footer div {
     .images img {
         width: 100%;
         margin: 10px auto;
-        display: block
+        display: block;
     }
     .formulario {
-        width: 100%
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .images{
+      width: 90%;
+    }
+
+    .page{
+      width: 85%;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -227,20 +298,23 @@ footer div {
         width: 100%;
         padding: 0;
         margin-left: 0;
-        margin-right: 0
+        margin-right: 0;
     }
     .images img {
-        width: 100%
+        width: 100%;
+    }
+    .page{
+      width: 85%;
     }
 }
 @media only screen and (max-width: 400px) {
     .images {
         width: 100%;
-        padding: 5px
+        padding: 5px;
     }
     .container {
         width: 100%;
-        margin: 0
+        margin: 0;
     }
     .formulario {
         width: 90%
@@ -252,6 +326,9 @@ footer div {
         padding: 0;
         display: inline-flex;
         font-size: 14px
+    }
+    .page{
+      width: 90%;
     }
 }
 .dark-primary-color {
