@@ -1,9 +1,11 @@
 ---
 
+import Contact from '../components/Contact.astro';
 import Intro from '../components/Intro.astro';
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav/index.jsx';
-import Skills from '../components/Skills';
+import Skills from '../components/Skills.astro';
+import Works from '../components/Works.astro';
 ---
 
 <html lang="es">
@@ -13,6 +15,8 @@ import Skills from '../components/Skills';
 	<body>
 		<Nav />
 		<Intro />
-		<Skills client:visible  />
+		<Skills />
+		<Works />
+		<Contact />
 	</body>
 </html>
