@@ -8,7 +8,7 @@ export default function ContactForm() {
   if (state.succeeded) {
     return (
       <div className="bg-white flex flex-col items-center justify-center dark:bg-gray-800 text-gray-900 dark:text-white">
-        <h4 className="text-xl">Gracias por su su mensaje.</h4>
+        <h4 className="text-xl">Gracias por su mensaje.</h4>
         <div className="w-3/6 p-3 sm:w-4/12 md:p-10">
           <img src={undrawMail} alt="Mensaje enviado" />
         </div>
