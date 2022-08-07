@@ -4,15 +4,14 @@ const linkedinLogo = <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"
 
 function Nav() {
 	return (
-		<nav className='shadow-2 bg-white dark:bg-gray-800 dark:text-white'>
-			<div className="flex justify-around py-4">
+		<nav className='sticky top-0 z-40 flex-none mx-auto w-full bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-800'>
+			<div className="flex flex-col md:flex-row items-center gap-3 justify-around py-4">
 				<span></span>
-
 				<div className='flex justify-center gap-x-10 font-semibold'>
-					<a className='hover:text-violet-600 hover:cursor-pointer'>Sobre mi</a>
-					<a className='hover:text-violet-600 hover:cursor-pointer'>Skills</a>
-					<a className='hover:text-violet-600 hover:cursor-pointer'>Experiencia Laboral</a>
-					<a className='hover:text-violet-600 hover:cursor-pointer'>Contacto</a>
+					<a href="#about" className='hover:text-violet-600 hover:cursor-pointer'>Sobre mi</a>
+					<a href="#skills" className='hover:text-violet-600 hover:cursor-pointer'>Skills</a>
+					<a href="#exp" className='hover:text-violet-600 hover:cursor-pointer'>Experiencia Laboral</a>
+					<a href="#contact" className='hover:text-violet-600 hover:cursor-pointer'>Contacto</a>
 				</div>
 				<div className="flex gap-x-4">
 					<a className="hover:cursor-pointer  hover:text-violet-600" href='https://www.linkedin.com/in/juandiegost/' target='_blank'  >{linkedinLogo}</a>

@@ -1,7 +1,7 @@
 ---
-const { title="Juan Diego Molina Muñoz -【 FullStack Developer 】",
-        description="Soy un Colombiano 🇨🇴,  me encanta desarrollar, leer, escribir y aprender."
-    } = Astro.props;
+const { title = "Juan Diego Molina Muñoz -【 FullStack Developer 】",
+    description = "Soy un Colombiano 🇨🇴,  me encanta desarrollar, leer, escribir y aprender."
+} = Astro.props;
 ---
 
 <meta charset="UTF-8" />
@@ -20,3 +20,8 @@ const { title="Juan Diego Molina Muñoz -【 FullStack Developer 】",
         document.documentElement.classList.remove('dark')
     }
 </script>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
