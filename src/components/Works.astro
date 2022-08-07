@@ -10,7 +10,7 @@ import data from "../data/works.json"
     </h3>
   </div>
   <div class="p-4 mx-auto max-w-screen-xl">
-    <ol class="relative border-l border-gray-200 dark:border-gray-700">
+    <ol class="relative border-l border-gray-500 dark:border-gray-700">
       {data.reverse().map((work, index) => (
       <Work key={index} description={work.description} start={work.start} end={work.end} company={work.company} />
       ))}
