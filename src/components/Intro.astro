@@ -1,0 +1,25 @@
+---
+const title = ` !Hola! Soy Juan Diego Molina Muñoz`;
+const subTitle = `Full Stack Developer con más de ${(new Date()).getFullYear() - 2020} años de experiencia en desarrollo`;
+const description = `Soy un Colombiano 🇨🇴, me encanta desarrollar, leer, escribir y aprender nuevas cosas.`;
+import devLogo from '../img/developer.svg';
+---
+<header id="about" class="flex gap-5 justify-around items-center bg-white dark:bg-gray-800">
+    <div class="p-5 p5">
+        <h1 class="text-4xl font-bold dark:text-white">
+            {title}
+        </h1>
+        <h2 class="text-2xl text-violet-600 mt-2">
+            {subTitle}
+        </h2>
+        <p class="text-sm mt-2 font-light dark:text-white">
+            {description}
+        </p>
+        <div class="mt-5">
+            <a href="/assets/CV-JuanDiegoMolina.pdf" target="_blank" class="bg-violet-600 p-3 rounded-full text-white">Descargar CV</a>
+        </div>
+    </div>
+    <div class="p-5 hidden sm:hidden md:flex lg:flex xl:flex 2xl:flex">
+        <img src={devLogo} alt="">
+    </div>
+</header>
