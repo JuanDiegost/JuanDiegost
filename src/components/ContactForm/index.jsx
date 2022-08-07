@@ -2,7 +2,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import undrawMail from "../../img/undraw_mail_sent.svg";
 
 export default function ContactForm() {
-  const [state, handleSubmit] = useForm('import.meta.env.NEXT_PUBLIC_FORM');
+  const [state, handleSubmit] = useForm(import.meta.env.NEXT_PUBLIC_FORM);
 
   if (state.succeeded) {
     return (
