@@ -1,0 +1,19 @@
+---
+import Work from "./Work";
+import data from "../data/works.json"
+---
+
+<div id="exp" class="bg-white dark:bg-gray-800">
+  <div class="flex gap-5 justify-around items-center">
+    <h3 class="p-5 p5 mx-auto text-xl font-semibold text-gray-900 dark:text-white">
+      Experiencia Laboral
+    </h3>
+  </div>
+  <div class="p-4 mx-auto max-w-screen-xl">
+    <ol class="relative border-l border-gray-500 dark:border-gray-700">
+      {data.reverse().map((work, index) => (
+      <Work key={index} description={work.description} start={work.start} end={work.end} company={work.company} />
+      ))}
+    </ol>
+  </div>
+</div>
