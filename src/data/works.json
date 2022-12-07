@@ -10,5 +10,11 @@
         "start": "Dic 2021",
         "end": "Jul 2022",
         "description": "Ingeniero de Desarrollo"
+    },
+    {
+        "company": "Intcomex",
+        "start": "Ago 2022",
+        "end": "Actualidad",
+        "description": "Fullstack Developer"
     }
 ]
